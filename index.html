@@ -64,7 +64,9 @@
   <main>
     <section class="banner">
       <img src="videos1.png" alt="img">
-      <img src="videos2.gif" alt="img" width=100 height=50>
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/comnect-aa2fc.appspot.com/o/videos2.gif?alt=media&token=b863fdfc-d1fe-4e5c-8d0b-f95f8945aea2"
+        alt="img" width=100 height=50>
       <!-- <video controls autoplay muted loop controlsList="nodownload" src="videos.mp4" ></video> -->
       <h1 data-aos="fade-up">ANAPEECH</h1>
     </section>
@@ -76,7 +78,8 @@
           <p data-aos="fade-up" data-aos-delay="200"><span style="font-weight: bold;">체계적이고 실용적</span>인 커리큘럼으로 구성되어,
           </p>
           <p data-aos="fade-up" data-aos-delay="300"><span style="font-weight: bold;">깊이 있는 이해와 실질적인 성장</span>을 이끌어내는
-            <br> 것을 <span style="font-weight: bold;">목표</span>로 합니다.</p>
+            <br> 것을 <span style="font-weight: bold;">목표</span>로 합니다.
+          </p>
         </div>
       </div>
       <ul class="curriculum_list">
@@ -231,26 +234,29 @@
 
     <section class="partners">
       <div class="title txtWh">
-        <p class="tit aos-init aos-animate" data-aos="fade-up">아나피치와 함께 ‘우리'가 된 파트너사들</p>
-        <div class="con">
-          <p data-aos="fade-up" data-aos-delay="100" class="aos-init aos-animate">아나피치는 전문성과 열정을 바탕으로 성장하는 다양한 분야의 </p>
-          <p data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">파트너사들과 함께 ‘우리’라는 특별한 관계를 만들어가고 있습니다.</p>
+        <p class="tit aos-init aos-animate" data-aos="fade-up">제휴업체로고</p>
+      </div>
+
+      <!-- Slider main container -->
+      <div class="swiper partners-list">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="image/wet/img1.jpeg" height="180px"></div>
+          <div class="swiper-slide"><img src="image/wet/img2.jpeg" height="120px"></div>
+          <div class="swiper-slide"><img src="image/wet/img3.jpeg" height="120px"></div>
+          <div class="swiper-slide"><img src="image/wet/img4.png" height="120px"></div>
+          <div class="swiper-slide"><img src="image/wet/img5.png" height="120px"></div>
+          <div class="swiper-slide"><img src="image/wet/img6.png" height="120px"></div>
+          <div class="swiper-slide"><img src="image/wet/img7.png" height="120px"></div>
+          <div class="swiper-slide"><img src="image/wet/img8.jpeg" height="50px"></div>
+          <div class="swiper-slide"><img src="image/wet/img9.png" height="120px"></div>
+          <div class="swiper-slide"><img src="image/wet/img10.png" height="120px"></div>
+          <div class="swiper-slide"><img src="image/wet/img11.jpeg" height="180px"></div>
+          <div class="swiper-slide"><img src="image/wet/img12.jpeg" height="120px"></div>
         </div>
       </div>
-      <ul class="partners-list">
-        <li><img src="image/wet/img1.jpeg" height="180px"></li>
-        <li><img src="image/wet/img2.jpeg" height="120px"></li>
-        <li><img src="image/wet/img3.jpeg" height="120px"></li>
-        <li><img src="image/wet/img4.png" height="120px"></li>
-        <li><img src="image/wet/img5.png" height="120px"></li>
-        <li><img src="image/wet/img6.png" height="120px"></li>
-        <li><img src="image/wet/img7.png" height="120px"></li>
-        <li><img src="image/wet/img8.jpeg" height="50px"></li>
-        <li><img src="image/wet/img9.png" height="120px"></li>
-        <li><img src="image/wet/img10.png" height="120px"></li>
-        <li><img src="image/wet/img11.jpeg" height="180px"></li>
-        <li><img src="image/wet/img12.jpeg" height="120px"></li>
-      </ul>
+  
     </section>
   </main>
 
@@ -369,6 +375,33 @@
       },
     },
   });
+  var partners = new Swiper(".partners-list", {
+    loop: true, // 무한 루프를 설정하여 첫 번째 슬라이드로 돌아가도록 함
+    slidesPerView: 1,
+    spaceBetween: 10,
+    autoplay: true,
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+
+      840: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+
+      1040: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+
+      1440: {
+        slidesPerView: 5,
+        spaceBetween: 40,
+      },
+    },
+  });
 
   AOS.init({
     duration: 500,
@@ -389,7 +422,7 @@
     setTimeout(() => {
       $(".banner img:nth-child(1)").hide();
       $(".banner img:nth-child(2)").show();
-    }, 2000);
+    }, 4000);
 
   })
 

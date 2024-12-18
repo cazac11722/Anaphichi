@@ -521,19 +521,18 @@ footer {
   display: flex;
   flex-wrap: wrap;
   padding: 0em 5% 0;
+  overflow: initial !important;
+  margin-bottom: 20px;
 }
 
-.partners-list > li {
-  width: 25%;
+.partners-list .swiper-slide {
   height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #fff;
-}
-
-.partners-list > li img {
-
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.12)
 }
 
 
