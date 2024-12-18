@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>아나피치</title>
+  <link rel="icon" type="image/png" href="./image/logo/logo_icon.png" sizes="16x16" />
+  <link rel="apple-touch-icon" type="image/png" href="./image/logo/logo_icon.png" sizes="16x16" />
+
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/icon.css" />
+  <link rel="stylesheet" href="./css/sub.css" />
+  <link rel="stylesheet" href="./css/curriculum.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- AOS 라이브러리 불러오기-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- jsdelivr 라이브러리 불러오기-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body class="active">
+
+  <div id="m_menu" class="deth-1">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="anapich.html">ABOUT</a></li>
+      <li><a href="class.html">CLASS</a></li>
+      <li><a href="trainer.html">TRAINER</a></li>
+      <li><a href="facility.html">FACILITY</a></li>
+    </ul>
+    <button type="button" class="ham_btn">
+      <i class="far fa-times" aria-hidden="true"></i>
+    </button>
+  </div>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="./image/logo/logo.png" alt="">
+        <!-- <h3>아나피치</h3> -->
+      </a>
+    </div>
+    <nav>
+      <ul id="menu" class="deth-1">
+        <li><a href="anapich.html">ABOUT</a></li>
+        <li><a href="class.html">CLASS</a></li>
+        <li><a href="trainer.html">TRAINER</a></li>
+        <li><a href="facility.html">FACILITY</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="ham_btn">
+      <i class="far fa-bars" aria-hidden="true"></i>
+    </button>
+  </header>
+  <main>
+    <div class="sub_title">
+      <div class="sub_txt">
+        <div class="btn-prev" data-aos="zoom-in" data-aos-delay="350" onclick="location.href = './class.html'"><svg
+            width="32" height="16" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM32 7L1 7V9L32 9V7Z"
+              fill="white" />
+          </svg>
+        </div>
+        <ul class="state clearfix">
+          <li data-aos="zoom-in"><a href="/">HOME</a></li>
+          <li data-aos="zoom-in" data-aos-delay="400">미인대회</li>
+          <li data-aos="zoom-in" data-aos-delay="500">미스코리아</li>
+        </ul>
+        <h3 data-aos="zoom-in" data-aos-delay="500">미스코리아</h3>
+      </div>
+      <ul class="sub_menu">
+        <li data-view="V1_view" data-aos="zoom-in" data-aos-delay="450">
+          <a href="./beauty1.html">미스그린코리아</a>
+        </li>
+        <li data-view="V2_view" class="active" data-aos="zoom-in" data-aos-delay="500">
+          <a href="./beauty2.html">미스코리아</a>
+        </li>
+        <li data-view="V3_view" data-aos="zoom-in" data-aos-delay="550" data-img="3/1.jpg,3/2.jpg">
+          <a href="./beauty3.html">미스인터콘티넨탈</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="programs">
+      <div class="program">
+        <div class="img">
+          <div class="swiper swiper1">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="./image/Class/beauty/2/1.png" alt="img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/Class/beauty/2/2.png" alt="img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/Class/beauty/2/3.jpg" alt="img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/Class/beauty/2/4.jpg" alt="img" />
+              </div>
+              <!-- <div class="swiper-slide"><img src="./image/met/img13.jpg" alt="" /></div> -->
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+          </div>
+
+        </div>
+        <div class="txt">
+          <div>
+            <p>미스코리아 반은 대한민국 최고의 미인대회인 미스코리아에 <br> 도전하는 여성들을 위한 <span>전문교육</span> 프로그램으로, <br> 외적인 아름다움뿐만 아니라 내면의
+              <span>자신감</span>과 <span>리더십</span>을 기를 수 있는 과정을 제공합니다.</p>
+            <p>참가자들은 퍼블릭 스피치, 무대 경험, 사회적 책임과 봉사 활동 등 <br> <span>다양한 교육</span>을 통해 대회 준비에 필요한 <span>종합적인 역량</span>을 배웁니다.
+            </p>
+            <p>또한, 이미지 메이킹, 에티켓, 인터뷰 훈련을 통해 <br> <span>미스코리아 대회</span>에 적합한 전반적인 자질을 갖추게 되며, <br> 무대 위에서 자신을 빛낼 수 있는 다양한
+              실전 경험을 쌓게 됩니다.</p>
+            <p>이 프로그램은 참가자들이 <span>미스코리아 대회</span>뿐만 아니라 <br> 이후의 삶에서도 리더로서 활동할 수 있는 역량을 갖출 수 있도록 지원합니다.</p>
+          </div>
+          <p class="bottom">
+            <a href="https://pf.kakao.com/_DGVPT/chat" target="_blank" class="kakao">카카오톡 상담 @<span>아나피치</span></a>
+            <a href="tel:053-270-2226" class="tel"><i class="fas fa-phone-alt" aria-hidden="true"></i>전화문의
+              <span>053-270-2226~7</span></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- <p class="woos">ANAPEECH ANAPEECH ANAPEECH ANAPEECH ANAPEECH ANAPEECH ANAPEECH</p> -->
+  </main>
+  <footer>
+    <div class="footer_top">
+      <div class="inner_wrap">
+        <ul>
+          <li><a href="/">HOME</a></li>
+          <li></li>
+          <li>CUSTOMER CENTER · 053-270-2226~7</li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <div class="inner_wrap">
+      <div class="footer_img"></div>
+      <div class="footer_quick">
+        <ul>
+          <li><a href="" rel="modal:open">개인정보처리방침</a></li>
+          <li class="pc_only">
+            <a href="">학원소개 </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_address">
+        <div class="footer_info">
+          <br>
+          <h1>
+            <img src="./image/logo/logo.png" alt="" />
+          </h1>
+          <p>
+            사업자(법인)명 : (주)아나피치 | 사업자번호 : 261-81-26002 <br />
+            대표 : 최윤정 | 개인정보책임자 : 최윤정 <br />
+            주소 : 대구 중구 국채보상로 611 대구시티센터 4, 5층<br />
+            학원명 : 아나피치 | 학원등록번호 : 제14520호
+            <br />
+          </p>
+          <div class="ftr-tel">
+            053-270-2226~7<br />
+            anapeech_md@naver.com
+          </div>
+          <h4>© (주)아나피치 All Rights Reserved</h4>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+    $(".ham_btn").on("click", function () {
+      $(".share_list").hide();
+      $("body").toggleClass("not_scroll");
+      $(this).toggleClass("open");
+      $("nav").toggleClass("open");
+    });
+
+    AOS.init({
+      duration: 500,
+    })
+
+    const swiper1 = new Swiper('.swiper1', {
+      // Optional parameters
+      // direction: 'vertical',
+      loop: true,
+
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+
+  </script>
+</body>
+
+</html>

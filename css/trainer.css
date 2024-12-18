@@ -1,0 +1,91 @@
+.trainer {
+    text-align: left;
+}
+
+.trainer .title {
+    padding: 7em 5% 0;
+}
+
+.trainer .title .tit {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Poppins-Bold";
+    letter-spacing: 5px;
+}
+
+.trainer .title .con {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.trainer .title .con br {
+    display: none;
+}
+
+.trainer .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 7em 5% 0;
+}
+
+.trainer .list>li {
+    width: 23%;
+    text-align: left;
+}
+
+.trainer .list>li h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1em;
+}
+
+.trainer .list>li img {
+    height: 30em;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media (max-width: 1300px) {
+    .trainer .list>li img {
+        height: 20em;
+    }
+}
+
+@media (max-width: 720px) {
+    .trainer .title {
+        padding: 3em 5%;
+    }
+
+    .trainer .title .tit {
+        font-size: 2rem;
+    }
+
+    .trainer .title .con {
+        font-size: 0.9rem;
+    }
+
+    .trainer .title .con br {
+        display: block;
+    }
+
+    .trainer .list {
+        padding: 0 5% 0;
+    }
+
+    .trainer .list>li {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 24px;
+    }
+
+    .trainer .list>li h3 {
+        font-size: 1.5rem;
+        margin-bottom: 24px;
+    }
+
+    .trainer .list>li img {
+        height: 15em;
+        object-position: 0% 20%;
+    }
+}
