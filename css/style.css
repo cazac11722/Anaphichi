@@ -535,6 +535,18 @@ footer {
   box-shadow: 5px 5px 20px rgba(0,0,0,0.12)
 }
 
+.wosdd {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  color: #fff;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
 
 
 @media (max-width: 1460px) {
@@ -561,6 +573,10 @@ footer {
 
   .sub_title h3 {
     font-size: 3rem;
+  }
+
+  .wosdd {
+    font-size: 2rem
   }
 
 
