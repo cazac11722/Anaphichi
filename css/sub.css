@@ -204,6 +204,10 @@
     color: #fff;
 }
 
+.sub_menu li a {
+    white-space: pre;
+}
+
 /* .sub_menu li:hover {
     font-size: 24px;
 } */
