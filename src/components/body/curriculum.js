@@ -34,8 +34,8 @@ const Curriculum = () => {
                         <h5>미인대회</h5>
                     </div>
                 </Link>
-                <Link to={'/class/beauty'} data-aos="zoom-in" data-aos-delay="500" className="aos-init aos-animate">
-                    <div className="wosdd">댄스 수업</div>
+                <Link to={'/class/dance'} data-aos="zoom-in" data-aos-delay="500" className="aos-init aos-animate">
+                    <img src={require("../../assets/image/Class/dance/main.jpg")} alt="" />
                     <div className="txt">
                         <h5>댄스</h5>
                     </div>

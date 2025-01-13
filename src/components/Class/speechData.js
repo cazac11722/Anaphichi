@@ -13,6 +13,9 @@ export const speech1 = {
                     다양한 상황에서의 <span>표현력</span>을 강화합니다.
                 </p>`,
     vie: ``,
+    images: [
+        '/speech/main.png'
+    ]
 };
 
 export const speech2 = {
@@ -24,6 +27,10 @@ export const speech2 = {
     `,
     vie: `DBSA 대구야구소프트볼협회 장내 아나운서, 영남일보 인턴 아나운서 등 다양한 방송 캐스팅 기회 제공
     `,
+    images: [
+        '/speech/2/1.png',
+        '/speech/2/2.jpg'
+    ]
 };
 
 export const speech3 = {
@@ -38,6 +45,13 @@ export const speech3 = {
         컨텐츠 진행자,
         행사 진행자 등 캐스팅 기회 제공
     `,
+    images: [
+        '/speech/3/1.png',
+        '/speech/3/2.png',
+        '/speech/3/3.png',
+        '/speech/3/4.png',
+        '/speech/3/5.png',
+    ]
 };
 
 export const speech4 = {
@@ -51,6 +65,10 @@ export const speech4 = {
         입시, 취업, 공무원(경찰, 소방),
         대기업, 공기업 등 취업·면접 컨설팅
     `,
+    images: [
+        '/speech/4/1.jpg',
+        '/speech/4/2.jpg',
+    ]
 };
 
 export const speech5 = {
@@ -64,6 +82,9 @@ export const speech5 = {
         발음·발성·톤 조절 훈련,
         시선 처리, 제스처, 표정 등 비언어적 커뮤니케이션 스킬
     `,
+    images: [
+        '/speech/5/1.png',
+    ]
 };
 
 export const speech6 = {
@@ -78,6 +99,13 @@ export const speech6 = {
         사투리 교정,
         스몰 토킹, 리더 스피치, 논리정연 스피치, 설득 스피치
     `,
+    images: [
+        '/speech/6/1.jpg',
+        '/speech/6/2.jpg',
+        '/speech/6/3.jpg',
+        '/speech/6/4.jpg',
+        '/speech/6/5.jpg',
+    ]
 };
 
 export const speech7 = {
@@ -89,4 +117,9 @@ export const speech7 = {
     vie: `
         <p>지자체, 기업 등 다양한 기관 강의 출강 강사양성 교육 진행</p>
     `,
+    images: [
+        '/speech/7/1.png',
+        '/speech/7/2.png',
+        '/speech/7/3.jpg',
+    ]
 };

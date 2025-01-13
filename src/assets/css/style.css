@@ -694,3 +694,6 @@ footer {
 
 
 }
+.trainer_view .img .swiper {
+  overflow: hidden !important;
+}

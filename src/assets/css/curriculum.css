@@ -68,10 +68,6 @@
     z-index: 1;
 }
 
-.curriculum_list > a:last-child::after {
-    display: none;
-}
-
 .curriculum_list > a .txt h5 {
     font-size: 1.6rem;
 }

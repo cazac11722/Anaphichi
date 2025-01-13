@@ -6,6 +6,10 @@ export const model1 = {
             <p>두 과정 모두 <span>개성</span>과 <span>자신감</span>을 키워 전문 모델로서의  역량을 극대화할 수 있도록 돕습니다.</p>
           </div>`,
     vie: ``,
+    images: [
+      '/model/main.jpeg',
+      '/model/img12.jpeg',
+    ]
 };
 
 export const model2 = {
@@ -19,6 +23,18 @@ export const model2 = {
               실현할 수 있는  기회를 제공합니다.</p>
           </div>`,
     vie: ``,
+    images: [
+      '/model/1/1.jpg',
+      '/model/1/2.jpg',
+      '/model/1/3.jpg',
+      '/model/1/4.JPG',
+      '/model/1/5.jpg',
+      '/model/1/6.jpg',
+      '/model/1/7.jpg',
+      '/model/1/8.jpg',
+      '/model/1/9.jpg',
+      '/model/1/10.jpg'
+    ] 
 };
 
 export const model3 = {
@@ -42,6 +58,14 @@ export const model3 = {
           </div>
     `,
     vie: ``,
+    images: [
+      '/model/2/1.jpg',
+      '/model/2/2.jpg',
+      '/model/2/3.jpg',
+      '/model/2/4.jpg',
+      '/model/2/5.jpg',
+      '/model/2/6.jpg',
+    ] 
 };
 
 export const model4 = {
@@ -54,6 +78,9 @@ export const model4 = {
           </div>
     `,
     vie: ``,
+    images: [
+      '/model/3/1.png'
+    ] 
 };
 
 export const model5 = {
@@ -63,4 +90,12 @@ export const model5 = {
             <p>또한, 이미지 컨설턴트 전문가가 <span>퍼스널 컬러</span>와 얼굴형에 맞는 <span>헤어</span>와 <span>메이크업</span>을 제공하며, 패션모델 출신의 <span>센터장</span>과 <span>원장님</span>이 직접 체형 관리와  <span>포즈 수업</span>을 진행하 전문적인 트레이닝을 제공합니다.</p>
           </div>`,
     vie: ``,
+    images: [
+      '/model/4/1.jpg',
+      '/model/4/2.jpg',
+      '/model/4/3.jpg',
+      '/model/4/4.jpg',
+      '/model/4/5.jpg',
+      '/model/4/6.jpg',
+    ] 
 };

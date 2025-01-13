@@ -20,6 +20,8 @@ import HostPage from "./components/Class/hostPage";
 import ModelPage from "./components/Class/modelPage";
 import KidsPage from "./components/Class/kidsPage";
 import BeautyPage from "./components/Class/BeautyPage";
+import TrainerPage from "./page/trainer/trainerPage";
+import DancePage from "./components/Class/dancePage";
 
 function App() {
   return (
@@ -63,7 +65,9 @@ function App() {
         <Route path="/class/beauty/2" element={<BeautyPage />} />
         <Route path="/class/beauty/3" element={<BeautyPage />} />
 
-        <Route path="/trainer" element={<MainPage />} />
+        <Route path="/class/dance" element={<DancePage />} />
+
+        <Route path="/trainer" element={<TrainerPage />} />
         <Route path="/facility" element={<MainPage />} />
 
       </Routes>

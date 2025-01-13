@@ -8,7 +8,8 @@ import Header from "../../components/header";
 import HeaderSub from "../../components/header_sub";
 import HeaderSubClass from "../header_sub_class";
 import { useLocation } from "react-router-dom";
-import { kids1, kids2, kids3, kids4 } from "./kidsData";
+import { beauty1, beauty2, beauty3, beauty4 } from "./beautyData";
+import Programs from "../body/Programs";
 
 const BeautyPage = () => {
     const location = useLocation();
@@ -20,10 +21,10 @@ const BeautyPage = () => {
     ];
 
     const subMenuItems = [
-        { text: '미인대회', link: '/class/beauty', delay: 450, content: kids1 },
-        { text: '미스그린코리아', link: '/class/beauty/1', delay: 450, content: kids2 },
-        { text: '미스코리아', link: '/class/beauty/2', delay: 500, content: kids3 },
-        { text: '미스인터콘티넨탈', link: '/class/beauty/3', delay: 550, content: kids4 },
+        { text: '미인대회', link: '/class/beauty', delay: 450, content: beauty1 },
+        { text: '미스코리아', link: '/class/beauty/1', delay: 450, content: beauty2 },
+        { text: '미인대회', link: '/class/beauty/2', delay: 500, content: beauty3 },
+        { text: '지역홍보대사', link: '/class/beauty/3', delay: 550, content: beauty4 },
     ];
 
     const [currentProgram, setCurrentProgram] = useState(null); // Default to the first program
@@ -48,58 +49,5 @@ const BeautyPage = () => {
     );
 };
 
-const Programs = ({ location, subMenuItems }) => {
-    let view = subMenuItems.filter((e) => {
-        return e.link == location.pathname ? true : false;
-    })
-    view = view[0];
-    console.log(view);
-    return (
-        <div className="anapich">
-            <div className="trainer_view">
-                <div className="inner">
-                    <div id="V1_view" className="active">
-                        <div className="img" style={{ width: "60em" }}>
-                            <Swiper
-                                modules={[Autoplay]}
-                                loop={true} // 무한 루프를 설정하여 첫 번째 슬라이드로 돌아가도록 함
-                                slidesPerViewloop={1}
-                                spaceBetweenloop={10}
-                                autoplayloop={true}
-                                className="partners-list"
-                            >
-                                <SwiperSlide><img src={require("../../assets/image/Class/speech/main.png")} alt='' /></SwiperSlide>
-                            </Swiper>
-                        </div>
-                        <div className="txt ">
-                            <div className="tit_wrap">
-                                <div>
-                                    <span className="subject"> ClASS</span>
-                                    <p className="trainer_nm" style={{ fontSize: "3rem" }}>{view.text}</p>
-                                </div>
-                            </div>
-                            <section>
-                                <h5 className="line">소개</h5>
-                                <ul className="readmore">
-                                    <li>
-                                        <div dangerouslySetInnerHTML={{ __html: view.content.contents }} />
-                                    </li>
-                                </ul>
-                                <h5 className={`line ${view.content.vie ? '' : 'hidden'}    `}>주요 혜택</h5>
-                                <ul className={`readmore ${view.content.vie ? '' : 'hidden'}`} >
-                                    <li>
-                                        <div dangerouslySetInnerHTML={{ __html: view.content.vie }} />
-                                    </li>
-                                </ul>
-                            </section>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    );
-};
 
 export default BeautyPage;
