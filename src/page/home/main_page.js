@@ -180,6 +180,10 @@ const MainPage = () => {
                         slidesperviewloop={1}
                         spacebetweenloop={10}
                         breakpoints={{
+                            300: {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
                             640: {
                                 slidesPerView: 2,
                                 spaceBetween: 20,
@@ -197,19 +201,18 @@ const MainPage = () => {
                                 spaceBetween: 40,
                             },
                         }}
-                        className="partners-list"
                     >
-                        <SwiperSlide><img src={require("../../assets/image/wet/img1.jpeg")} height={"180px"} alt='' /></SwiperSlide>
+                        <SwiperSlide><img src={require("../../assets/image/wet/img1.jpeg")} height={"120px"} alt='' /></SwiperSlide>
                         <SwiperSlide><img src={require("../../assets/image/wet/img2.jpeg")} height={"120px"} alt='' /></SwiperSlide>
                         <SwiperSlide><img src={require("../../assets/image/wet/img3.jpeg")} height={"120px"} alt='' /></SwiperSlide>
                         <SwiperSlide><img src={require("../../assets/image/wet/img4.png")} height={"120px"} alt='' /></SwiperSlide>
                         <SwiperSlide><img src={require("../../assets/image/wet/img5.png")} height={"120px"} alt='' /></SwiperSlide>
                         <SwiperSlide><img src={require("../../assets/image/wet/img6.png")} height={"120px"} alt='' /></SwiperSlide>
                         <SwiperSlide><img src={require("../../assets/image/wet/img7.png")} height={"120px"} alt='' /></SwiperSlide>
-                        <SwiperSlide><img src={require("../../assets/image/wet/img8.jpeg")} height={"50px"} alt='' /></SwiperSlide>
+                        <SwiperSlide><img src={require("../../assets/image/wet/img8.jpeg")} height={"70px"} alt='' /></SwiperSlide>
                         <SwiperSlide><img src={require("../../assets/image/wet/img9.png")} height={"120px"} alt='' /></SwiperSlide>
                         <SwiperSlide><img src={require("../../assets/image/wet/img10.png")} height={"120px"} alt='' /></SwiperSlide>
-                        <SwiperSlide><img src={require("../../assets/image/wet/img11.jpeg")} height={"180px"} alt='' /></SwiperSlide>
+                        <SwiperSlide><img src={require("../../assets/image/wet/img11.jpeg")} height={"120px"} alt='' /></SwiperSlide>
                         <SwiperSlide><img src={require("../../assets/image/wet/img12.jpeg")} height={"120px"} alt='' /></SwiperSlide>
                     </Swiper>
                 </section>

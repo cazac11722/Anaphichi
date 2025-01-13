@@ -112,31 +112,31 @@
         margin-bottom: 2em;
     }
 
-    .curriculum .list>li img {
+    .curriculum .list> a img {
         height: 20em;
     }
 
-    .curriculum_list li {
+    .curriculum_list a {
         width: 48%;
         height: 10em !important;
         margin-bottom: 15px;
         border-radius: 5px;
     }
 
-    .curriculum_list li img {
+    .curriculum_list a img {
         height: 160px;
     }
 
-    .curriculum_list li .txt p {
+    .curriculum_list a .txt p {
         display: none;
     }
     
 
-    .curriculum_list li .txt h5 {
+    .curriculum_list a .txt h5 {
         font-size: 1.2rem;
     }
 
-    .curriculum_list li .txt {
+    .curriculum_list a .txt {
         left: 10px;
         bottom: 10px;
     }

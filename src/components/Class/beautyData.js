@@ -1,12 +1,11 @@
 export const beauty1 = {
     contents: `
         <div>
-            <p>우리 학원의 미인대회 프로그램은 <span>미스그린코리아</span>, <span>미스코리아</span>, <br> <span>미스인터콘티넨탈</span>을 목표로 한 종합 교육 과정입니다. </p>
-            <p>미스그린코리아는 환경 의식을 갖춘  <span>아름다움을</span>, <br> 미스코리아는 <span>지성</span>, <span>인성</span>, <span>개성</span>을 갖춘 인재를, <br> 미스인터콘티넨탈은 글로벌 리더로서 <br> <span>국제적 소통 능력</span>을 갖춘 인재를 선발하고 육성합니다. </p>
-            <p>참가자들은 각 대회의 목적에 맞춘 훈련을 통해 <br> <span>내적·외적 성장</span>을 이루며 사회적 책임감을 갖춘 <br> <span>진정한 아름다움</span>을 추구하게 됩니다.</p>
+            <p>우리 학원의 미인대회 프로그램은 <span>미스그린코리아</span>, <span>미스코리아</span>, <span>미스인터콘티넨탈</span>을 목표로 한 종합 교육 과정입니다. </p>
+            <p>미스그린코리아는 환경 의식을 갖춘  <span>아름다움을</span>, 미스코리아는 <span>지성</span>, <span>인성</span>, <span>개성</span>을 갖춘 인재를, 미스인터콘티넨탈은 글로벌 리더로서 <span>국제적 소통 능력</span>을 갖춘 인재를 선발하고 육성합니다. </p>
+            <p>참가자들은 각 대회의 목적에 맞춘 훈련을 통해 <span>내적·외적 성장</span>을 이루며 사회적 책임감을 갖춘 <span>진정한 아름다움</span>을 추구하게 됩니다.</p>
         </div>
     `,
-    vie: ``,
     images: [
         '/beauty/main.jpg'
     ]
@@ -21,10 +20,10 @@ export const beauty2 = {
             <p>미스코리아는 단순한 대회가 아닌, 현대 여성이 가진 잠재력을 발휘하고 글로벌 영향력을 넓히는 장으로 자리매김하고 있습니다.</p>
         </div>
     `,
-    vie: ``,
     images: [
         '/beauty/1/1.jpg',
-        '/beauty/1/2.jpg'
+        '/beauty/1/2.jpg',
+        '/beauty/1/3.jpeg',
     ]
 };
 
@@ -37,7 +36,6 @@ export const beauty3 = {
             <p>세계 각국에서 열리는 다양한 미인대회는 참가자들이 문화 교류, 글로벌 네트워크 형성, 사회 공헌 활동에 참여할 기회를 제공하며, 대중 앞에서 자신의 이야기를 전하고 공감을 이끌어내는 플랫폼으로 자리 잡고 있습니다.</p>
         </div>
     `,
-    vie: ``,
     images: [
         '/beauty/2/1.jpg',
         '/beauty/2/2.png',
@@ -59,7 +57,6 @@ export const beauty4 = {
             <p>지역홍보대사 대회는 지역 사회와 외부 방문객을 연결하는 중요한 문화적 이벤트로 자리 잡고 있습니다.</p>
         </div>
     `,
-    vie: ``,
     images: [
         '/beauty/3/1.png',
         '/beauty/3/2.png',

@@ -44,7 +44,7 @@ const Programs = ({ location, subMenuItems }) => {
                                         <div dangerouslySetInnerHTML={{ __html: view.content.contents }} />
                                     </li>
                                 </ul>
-                                <h5 className={`line ${view.content.vie ? '' : 'hidden'}    `}>주요 혜택</h5>
+                                <h5 className={`line ${view.content.vie ? '' : 'hidden'}`}>주요 혜택</h5>
                                 <ul className={`readmore ${view.content.vie ? '' : 'hidden'}`} >
                                     <li>
                                         <div dangerouslySetInnerHTML={{ __html: view.content.vie }} />

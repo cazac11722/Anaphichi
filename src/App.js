@@ -22,6 +22,8 @@ import KidsPage from "./components/Class/kidsPage";
 import BeautyPage from "./components/Class/BeautyPage";
 import TrainerPage from "./page/trainer/trainerPage";
 import DancePage from "./components/Class/dancePage";
+import FacilityPage from "./page/facility/facilityPage";
+import AffiliatedPage from "./page/affiliated/affiliatedPage";
 
 function App() {
   return (
@@ -68,7 +70,8 @@ function App() {
         <Route path="/class/dance" element={<DancePage />} />
 
         <Route path="/trainer" element={<TrainerPage />} />
-        <Route path="/facility" element={<MainPage />} />
+        <Route path="/facility" element={<FacilityPage />} />
+        <Route path="/affiliated" element={<AffiliatedPage />} />
 
       </Routes>
     </Router>

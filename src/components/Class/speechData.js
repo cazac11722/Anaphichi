@@ -12,7 +12,6 @@ export const speech1 = {
                     스피치 과정은 논리적이고 설득력 있는 <span>발표 기술</span>을 통해
                     다양한 상황에서의 <span>표현력</span>을 강화합니다.
                 </p>`,
-    vie: ``,
     images: [
         '/speech/main.png'
     ]
@@ -68,6 +67,8 @@ export const speech4 = {
     images: [
         '/speech/4/1.jpg',
         '/speech/4/2.jpg',
+        '/speech/4/3.jpeg',
+        '/speech/4/4.jpeg',
     ]
 };
 

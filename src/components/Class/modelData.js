@@ -5,7 +5,6 @@ export const model1 = {
             <p>프로모델은 <span>패션쇼</span>와 <span>촬영</span> 등 다양한 분야에서  활동할 수 있는 전문 모델로 성장할 수 있도록  <span>실무 중심</span>의 <span>훈련</span>을 제공합니다. </p>
             <p>두 과정 모두 <span>개성</span>과 <span>자신감</span>을 키워 전문 모델로서의  역량을 극대화할 수 있도록 돕습니다.</p>
           </div>`,
-    vie: ``,
     images: [
       '/model/main.jpeg',
       '/model/img12.jpeg',
@@ -22,7 +21,6 @@ export const model2 = {
             <p>더불어 건강하고 균형 잡힌 몸매 관리 및 이미지 메이킹을  통해 시니어 <span>모델</span>로서의 경쟁력을 강화하며, 새로운 <span>도전</span>을 통해 꿈을
               실현할 수 있는  기회를 제공합니다.</p>
           </div>`,
-    vie: ``,
     images: [
       '/model/1/1.jpg',
       '/model/1/2.jpg',
@@ -57,7 +55,6 @@ export const model3 = {
               피치등을 통해 패션모델로서 광고, 연기, 크리에이터로 활동범위를 넓힐 수 있습니다.</p>
           </div>
     `,
-    vie: ``,
     images: [
       '/model/2/1.jpg',
       '/model/2/2.jpg',
@@ -77,7 +74,6 @@ export const model4 = {
             <p>다양한 수준에 <span>맞춘 수업</span>을 통해 누구나 쉽게 따라할 수 있으며, <span>자신감</span>을 얻고 일상에서 더 <span>매력적인 워킹</span>을 실현할 수 있도록 돕습니다.</p>
           </div>
     `,
-    vie: ``,
     images: [
       '/model/3/1.png'
     ] 
@@ -89,7 +85,6 @@ export const model5 = {
             <p>8시간 이상의 교육을 통해 <span>포즈</span>와 <span>표정</span>을 완성한 후, 실전 촬영을 진행하고 <span>결과물</span>을 바탕으로  포트폴리오를 제작할 수 있습니다. </p>
             <p>또한, 이미지 컨설턴트 전문가가 <span>퍼스널 컬러</span>와 얼굴형에 맞는 <span>헤어</span>와 <span>메이크업</span>을 제공하며, 패션모델 출신의 <span>센터장</span>과 <span>원장님</span>이 직접 체형 관리와  <span>포즈 수업</span>을 진행하 전문적인 트레이닝을 제공합니다.</p>
           </div>`,
-    vie: ``,
     images: [
       '/model/4/1.jpg',
       '/model/4/2.jpg',

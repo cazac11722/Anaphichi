@@ -54,6 +54,8 @@
 
 .cpv__header__btn.cpv__header__btn--close {
     cursor: pointer;
+    background: transparent;
+    border: 0;
 }
 
 .cpv main {
@@ -85,7 +87,6 @@
 
 .cpv .swiper-slide img {
     height: 100% !important;
-    object-fit: contain;
 }
 
 .cpv .swiper-slide img {
@@ -213,7 +214,7 @@
 } */
 
 .sub_menu li.active {
-    background: rgba(255,225,233,0.1);
+    background: rgba(255,225,233,0.3);
     color: #fff;
 }
 
@@ -555,6 +556,8 @@
     font-weight: 500;
     text-align: right;
     letter-spacing: -0.025em;
+    background-color: transparent;
+    border: 0;
 }
 
 .trainer_view .txt .r_more i {
@@ -563,6 +566,7 @@
     margin-left: 20px;
     border: 2px solid;
     border-radius: 20px;
+    text-align: center;    
 }
 
 .trainer_view .txt .r_close {
@@ -635,11 +639,28 @@ section h5.line {
     background: #191919;
 }
 
+
+
+.trainer_view .txt section ul.cdoe li::before {
+    display: none;
+}
+
+.trainer_view.owd .txt section ul li::before {
+    display: none;
+}
+
+
+.trainer_view.owd .txt section ul li > img {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+    margin: 20px;
+}
+
 .trainer_view .txt section p {
     color: #444;
     font-size: 16px;
     line-height: 1.4;
-    margin-bottom : 20px;
+    margin-bottom : 10px;
 }
 
 .trainer_view .txt section>*:first-child {
@@ -925,6 +946,41 @@ a.kakao {
     background: #fff !important;
 }
 
+.hidden {
+    display: none;
+}
+
+.affiliated_list {
+    margin-top: 7%;
+    padding: 0 50px;
+    display: flex;
+
+}
+
+.affiliated_list > li {
+    margin-bottom: 50px;
+    border: 1px solid #000;
+}
+
+.affiliated_list > li > ul {
+    display: flex;
+    flex-wrap : wrap;
+}
+
+.affiliated_list > li > ul img {
+    width: 200px;
+}
+
+
+.affiliated_list > li > h3 {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #000;
+    font-weight: 700;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+
 @keyframes leftArow {
     0% {margin-left: 0;}
     50% {margin-left: 20px;}
@@ -934,6 +990,11 @@ a.kakao {
 
 @media (max-width: 1080px) {
 
+    .sub_menu li.active {
+        background: #000;
+        color: #fff;
+    }
+    
     .program {
         flex-direction: column;
     }
@@ -954,6 +1015,9 @@ a.kakao {
 
     .program .txt p span {
         font-size: 1.2rem;
+    }
+    .trainer_view .img {
+        width: 100% !important;
     }
 
     .sub_menu {
@@ -1060,7 +1124,7 @@ a.kakao {
     }
 
     .cpv .swiper {
-        width: 270px;
+        width: 85vw;
         height: 200px;
     }
 
@@ -1126,6 +1190,10 @@ a.kakao {
     }
     .program .txt p {
         line-height: 1.5em;
+    }
+
+    .trainer_view .img {
+        width: 100% !important;
     }
 
 

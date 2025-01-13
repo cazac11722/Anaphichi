@@ -26,7 +26,7 @@ const Header = () => {
                         <li><Link to="/class">CLASS</Link></li>
                         <li><Link to="/trainer">TRAINER</Link></li>
                         <li><Link to="/facility">FACILITY</Link></li>
-                        <li><Link to="/facility">AFFILIATED</Link></li>
+                        <li><Link to="/affiliated">AFFILIATED</Link></li>
                     </ul>
                 </nav>
                 <button type="button" className="ham_btn">
