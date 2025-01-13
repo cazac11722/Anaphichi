@@ -1,0 +1,76 @@
+.facility .title {
+    padding: 7em 5%;
+    text-align: left;
+}
+
+.facility .title .tit {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Poppins-Bold";
+    letter-spacing: 5px;
+}
+
+.facility .title .con {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.facility .title .con br {
+    display: none;
+}
+
+.facility .swiper-wrapper .swiper-slide {
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.facility .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.facility .swiper-wrapper .swiper-slide::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 720px) {
+
+    .facility .title .con br {
+        display: block;
+    }
+
+    .facility .title {
+        padding: 1em 5%;
+    }
+
+    .facility .title .tit {
+        font-size: 2rem;
+    }
+
+    .facility .title .con {
+        font-size: 1rem;
+    }
+
+    .facility .list>li {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 2em;
+    }
+
+    .facility .list>li img {
+        height: 20em;
+    }
+
+    .facility .swiper-wrapper .swiper-slide {
+        height: 300px;
+    }
+}

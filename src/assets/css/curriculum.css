@@ -1,0 +1,148 @@
+.curriculum .title {
+    padding: 7em 5% 0;
+    text-align: left;
+}
+
+.curriculum .title .tit {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Poppins-Bold";
+    letter-spacing: 5px;
+}
+
+.curriculum .title .con {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.curriculum .title .con br {
+    display: none;
+}
+
+.curriculum .curriculum_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 7% 5% 0;
+}
+
+.curriculum_list > a {
+    width: 32%;
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.curriculum_list > a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.curriculum_list > a:hover:after {
+    opacity: 0.6;
+}
+
+.curriculum_list > a .txt {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    z-index: 5;
+}
+
+.curriculum_list > a:after {
+    display: block;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(0deg, #000 20%, transparent);
+    opacity: 0.4;
+    transition: opacity 0.5s;
+    z-index: 1;
+}
+
+.curriculum_list > a:last-child::after {
+    display: none;
+}
+
+.curriculum_list > a .txt h5 {
+    font-size: 1.6rem;
+}
+
+@media (max-width: 1080px) {
+    .curriculum_list li .txt p {
+        width: 90%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: pre;
+    }
+}
+
+
+@media (max-width: 720px) {
+    section.curriculum .curriculum_list {
+        padding: 0% 5% 0;
+    }
+
+    .curriculum .curriculum_list {
+        padding: 3em 5% 0;
+    }
+    .curriculum .title {
+        padding: 3em 5%;
+    }
+
+    .curriculum .title .tit {
+        font-size: 2rem;
+    }
+
+    .curriculum .title .con {
+        font-size: 0.9rem;
+    }
+
+    .curriculum .title .con br {
+        display: block;
+    }
+
+    .curriculum .list>li {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 2em;
+    }
+
+    .curriculum .list>li img {
+        height: 20em;
+    }
+
+    .curriculum_list li {
+        width: 48%;
+        height: 10em !important;
+        margin-bottom: 15px;
+        border-radius: 5px;
+    }
+
+    .curriculum_list li img {
+        height: 160px;
+    }
+
+    .curriculum_list li .txt p {
+        display: none;
+    }
+    
+
+    .curriculum_list li .txt h5 {
+        font-size: 1.2rem;
+    }
+
+    .curriculum_list li .txt {
+        left: 10px;
+        bottom: 10px;
+    }
+    
+}
