@@ -7,7 +7,7 @@ export const beauty1 = {
         </div>
     `,
     images: [
-        '/beauty/main.jpg'
+        '/beauty/main.png'
     ]
 };
 

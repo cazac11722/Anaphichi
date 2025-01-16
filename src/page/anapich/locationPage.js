@@ -1,3 +1,4 @@
+/* global naver */
 import { useEffect } from "react";
 import AOS from "aos";
 import "../../assets/css/sub.css";
@@ -7,21 +8,47 @@ import HeaderSub from "../../components/header_sub";
 
 const LocatoinPage = () => {
     const stateItems = [
-        { text: 'HOME', link: '/', delay: 0 },
-        { text: 'ABOUT', delay: 400 },
+        { text: "HOME", link: "/", delay: 0 },
+        { text: "ABOUT", delay: 400 },
     ];
 
     const subMenuItems = [
-        { text: 'AP 소개', link: '/anapich', delay: 450 },
-        { text: 'LOCATION', link: '/location', delay: 500 },
+        { text: "AP 소개", link: "/anapich", delay: 450 },
+        { text: "LOCATION", link: "/location", delay: 500 },
     ];
 
     useEffect(() => {
         AOS.init({
             duration: 500,
         });
-        document.body.classList.add('active');
+        document.body.classList.add("active");
+
+        const script = document.createElement("script");
+        script.src = `https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=tzwezty8ho&submodules=geocoder`;
+        script.async = true;
+        script.onload = () => {
+            const map = new naver.maps.Map("map", {
+                center: new naver.maps.LatLng(35.871130, 128.597256),
+                zoom: 17,
+            });
+
+            const marker = new naver.maps.Marker({
+                position: new naver.maps.LatLng(35.871130, 128.597256),
+                map: map,
+                title: "대구 중구 국채보상로 611 대구시티센터 4, 5층",
+            });
+
+            const infoWindow = new naver.maps.InfoWindow({
+                content: `<div style="padding:10px; font-size:14px;">대구 중구 국채보상로 611<br />대구시티센터 4, 5층</div>`,
+            });
+
+            naver.maps.Event.addListener(marker, "click", () => {
+                infoWindow.open(map, marker);
+            });
+        };
+        document.body.appendChild(script);
     }, []);
+
     return (
         <>
             <Header />
@@ -32,16 +59,22 @@ const LocatoinPage = () => {
                         <div className="inner">
                             <div id="V2_view" className="cide active">
                                 <div className="img">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1349.1974439546984!2d128.59725620417308!3d35.87113045858115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565e313536d269f%3A0xd24d2d79900e857f!2z64yA6rWs7Iuc7Yuw7IS87YSw!5e1!3m2!1sko!2skr!4v1732205374310!5m2!1sko!2skr"
-                                        height="600" style={{ border: 0 }} allowFullScreen="" loading="lazy"
-                                        referrerPolicy="no-referrer-when-downgrade"></iframe>
+                                    <div
+                                        id="map"
+                                        style={{
+                                            width: "100%",
+                                            height: "600px",
+                                            border: "1px solid #ddd",
+                                        }}
+                                    ></div>
                                 </div>
                                 <section>
                                     <h5 className="line">ADDRESS</h5>
                                     <ul className="readmore">
                                         <li>
                                             <p>대구 중구 국채보상로 611 대구시티센터 4, 5층</p>
+                                            <p>-중앙로역 대구 1호선에서 도보 5분 거리</p>
+                                            <p>-2.28기념중앙공원건너1 버스정류장 바로 앞</p>
                                         </li>
                                     </ul>
                                     <h5 className="line">CONTACT</h5>
@@ -50,8 +83,13 @@ const LocatoinPage = () => {
                                             <p>T.053-270-2226 ~ 7</p>
                                         </li>
                                         <li>
-                                            <a href="https://pf.kakao.com/_DGVPT/chat" target="_blank" className="kakao">카카오톡 상담
-                                                <span>@아나피치</span></a>
+                                            <a
+                                                href="https://pf.kakao.com/_DGVPT/chat"
+                                                target="_blank"
+                                                className="kakao"
+                                            >
+                                                카카오톡 상담 <span>@아나피치</span>
+                                            </a>
                                         </li>
                                     </ul>
                                 </section>
@@ -63,6 +101,6 @@ const LocatoinPage = () => {
             <Footer />
         </>
     );
-}
+};
 
 export default LocatoinPage;

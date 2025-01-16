@@ -29,7 +29,7 @@ const Curriculum = () => {
                     </div>
                 </Link>
                 <Link to={'/class/beauty'} data-aos="zoom-in" data-aos-delay="500" className="aos-init aos-animate">
-                    <img src={require("../../assets/image/Class/beauty/main.jpg")} alt="" />
+                    <img src={require("../../assets/image/Class/beauty/main.png")} alt="" />
                     <div className="txt">
                         <h5>미인대회</h5>
                     </div>

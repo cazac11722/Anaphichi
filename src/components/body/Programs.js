@@ -8,7 +8,7 @@ const Programs = ({ location, subMenuItems }) => {
         return e.link == location.pathname ? true : false;
     })
     view = view[0];
-    
+
     return (
         <div className="anapich">
             <div className="trainer_view">
@@ -16,10 +16,15 @@ const Programs = ({ location, subMenuItems }) => {
                     <div id="V1_view" className="active">
                         <div className="img" style={{ width: "40%" }}>
                             <Swiper
-                                modules={[Autoplay]}
-                                loop={true} // 무한 루프를 설정하여 첫 번째 슬라이드로 돌아가도록 함
-                                slidesperviewloop={1}
-                                spacebetweenloop={10}
+                                modules={[Navigation, Autoplay]} // Include Navigation module
+                                loop={true} // Enable infinite loop
+                                autoplay={{
+                                    delay: 3000, // Auto-slide every 3 seconds
+                                    disableOnInteraction: false, // Continue autoplay after user interaction
+                                }}
+                                spaceBetween={10} // Space between slides
+                                slidesPerView={1} // Show 1 slide at a time
+                                navigation // Enable navigation (arrows)
                                 className="partners-list"
                             >
                                 {

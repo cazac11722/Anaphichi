@@ -34,12 +34,11 @@ const AffiliatedPage = () => {
                 <div className="trainer_view owd" >
                     <div className="inner">
                         <div id="V1_view" className="active">
-                            <div className="img"><img src={require("../../assets/image/logo/logo_in.png")} alt="img" /></div>
                             <div className="txt ">
                                 <div className="tit_wrap">
                                     <div>
                                         <span className="subject"> ANAPEECH</span>
-                                        <p className="trainer_nm" style={{ fontSize: "3rem" }}>대구의 최고 최대 규모 아카데미</p>
+                                        <p className="trainer_nm" style={{ fontSize: "3rem" }}>아나피치 제휴 업체</p>
                                     </div>
                                 </div>
                                 <section>

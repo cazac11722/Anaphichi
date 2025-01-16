@@ -1,12 +1,14 @@
-import { useState, useEffect } from "react";
-import Footer from "../../components/footer";
-import Header from "../../components/header";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import Swiper from "swiper";
+import { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+
+import Footer from "../../components/footer";
+import Header from "../../components/header";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import img1 from "../../assets/image/word/A1.jpg";
 import img2 from "../../assets/image/word/A2.jpg";
@@ -19,10 +21,11 @@ import img6 from "../../assets/image/word/C2.jpg";
 import img7 from "../../assets/image/word/web.jpg";
 import img8 from "../../assets/image/word/wrk1.jpg";
 import img9 from "../../assets/image/word/wrk2.jpg";
+import img10 from "../../assets/image/word/wrk3.jpg";
+import img11 from "../../assets/image/word/wrk4.jpg";
 
 const FacilityPage = () => {
     const [activeFacility, setActiveFacility] = useState(null);
-    const [swiper, setSwiper] = useState(null);
 
     const facilities = [
         { id: "A1", name: "A1 강의실", img: img1 },
@@ -33,45 +36,24 @@ const FacilityPage = () => {
         { id: "C2", name: "C2 강의실", img: img6 },
         { id: "연기실", name: "연기실", img: img7 },
         { id: "워킹실", name: "워킹실", img: img8, additionalImg: img9 },
+        { id: "메이크업실", name: "메이크업실", img: img10, additionalImg: img11 },
     ];
-
-    useEffect(() => {
-        // Initialize AOS
-        Aos.init({
-            duration: 500,
-        });
-
-        // Initialize Swiper
-        const swiperInstance = new Swiper(".swiper1", {
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-        setSwiper(swiperInstance);
-        document.body.classList.add('active');
-    }, []);
 
     const handleFacilityClick = (facility) => {
         setActiveFacility(facility);
-
-        let slidesHtml = `<div class="swiper-slide"><img src="${facility.img}" alt="${facility.name}" /></div>`;
-        if (facility.additionalImg) {
-            slidesHtml += `<div class="swiper-slide"><img src="${facility.additionalImg}" alt="${facility.name}" /></div>`;
-        }
-
-        document.querySelector(".cpv .swiper-wrapper").innerHTML = slidesHtml;
-        swiper.update();
-        document.querySelector(".cpv").classList.add("show");
     };
 
     const closePopup = () => {
-        document.querySelector(".cpv").classList.remove("show");
+        setActiveFacility(null);
     };
+  
+
+    useEffect(() => {
+        // Initialize AOS
+        AOS.init({
+            duration: 500,
+        });
+    }, []);
 
     return (
         <>
@@ -104,53 +86,66 @@ const FacilityPage = () => {
                     ))}
                 </ul>
 
-                <div className="cpv">
-                    <header className="cpv__header">
-                        <div className="cpv__header__btn--title">
-                            <div className="cpv_title-inner">
-                                {activeFacility ? activeFacility.name : ""}
+                {activeFacility && (
+                    <div className="cpv show">
+                        <header className="cpv__header">
+                            <div className="cpv__header__btn--title">
+                                <div className="cpv_title-inner">{activeFacility.name}</div>
                             </div>
-                        </div>
-                        <div className="cpv__header__btn--info">
-                            <button
-                                className="cpv__header__btn cpv__header__btn--close"
-                                onClick={closePopup}
-                            >
-                                <svg
-                                    className="cpv__icon"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="25"
-                                    height="25"
-                                    viewBox="0 0 25 25"
-                                    fill="none"
+                            <div className="cpv__header__btn--info">
+                                <button
+                                    className="cpv__header__btn cpv__header__btn--close"
+                                    onClick={closePopup}
                                 >
-                                    <g className="header_icon_closed_null">
-                                        <path
-                                            d="M4.5 4L20.5 20"
-                                            stroke="white"
-                                            strokeWidth="2"
-                                            strokeLinecap="round"
-                                        ></path>
-                                        <path
-                                            d="M20.5 4L4.5 20"
-                                            stroke="white"
-                                            strokeWidth="2"
-                                            strokeLinecap="round"
-                                        ></path>
-                                    </g>
-                                </svg>
-                            </button>
-                        </div>
-                    </header>
-                    <main>
-                        <div className="swiper swiper1">
-                            <div className="swiper-wrapper"></div>
-                            <div className="swiper-pagination"></div>
-                            <div className="swiper-button-prev"></div>
-                            <div className="swiper-button-next"></div>
-                        </div>
-                    </main>
-                </div>
+                                    <svg
+                                        className="cpv__icon"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="25"
+                                        height="25"
+                                        viewBox="0 0 25 25"
+                                        fill="none"
+                                    >
+                                        <g className="header_icon_closed_null">
+                                            <path
+                                                d="M4.5 4L20.5 20"
+                                                stroke="white"
+                                                strokeWidth="2"
+                                                strokeLinecap="round"
+                                            ></path>
+                                            <path
+                                                d="M20.5 4L4.5 20"
+                                                stroke="white"
+                                                strokeWidth="2"
+                                                strokeLinecap="round"
+                                            ></path>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                        </header>
+                        <main>
+                            <Swiper
+                                className="swiper1"
+                                modules={[Navigation, Pagination]}
+                                loop={true}
+                                pagination={{ clickable: true }}
+                                navigation
+                            >
+                                <SwiperSlide>
+                                    <img src={activeFacility.img} alt={activeFacility.name} />
+                                </SwiperSlide>
+                                {activeFacility.additionalImg && (
+                                    <SwiperSlide>
+                                        <img
+                                            src={activeFacility.additionalImg}
+                                            alt={activeFacility.name}
+                                        />
+                                    </SwiperSlide>
+                                )}
+                            </Swiper>
+                        </main>
+                    </div>
+                )}
             </main>
             <Footer />
         </>
