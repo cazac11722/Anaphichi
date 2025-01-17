@@ -8,7 +8,7 @@ import Header from "../../components/header";
 import HeaderSub from "../../components/header_sub";
 import HeaderSubClass from "../header_sub_class";
 import { useLocation } from "react-router-dom";
-import { kids1, kids2, kids3, kids4 } from "./kidsData";
+import { kids1, kids2, kids3 } from "./kidsData";
 import Programs from "../body/Programs";
 
 const KidsPage = () => {
@@ -21,10 +21,10 @@ const KidsPage = () => {
     ];
 
     const subMenuItems = [
-        { text: '키즈 모델', link: '/class/kids', delay: 450, content: kids1 },
-        { text: '키즈 댄스', link: '/class/kids/1', delay: 450, content: kids2 },
-        { text: '키즈 모델', link: '/class/kids/2', delay: 500, content: kids3 },
-        { text: '키즈 스피치', link: '/class/kids/3', delay: 550, content: kids4 },
+        // { text: '키즈 모델', link: '/class/kids', delay: 450, content: kids1 },
+        { text: '키즈 댄스', link: '/class/kids', delay: 450, content: kids1 },
+        { text: '키즈 모델', link: '/class/kids/2', delay: 500, content: kids2 },
+        { text: '키즈 스피치', link: '/class/kids/3', delay: 550, content: kids3 },
     ];
 
     const [currentProgram, setCurrentProgram] = useState(null); // Default to the first program

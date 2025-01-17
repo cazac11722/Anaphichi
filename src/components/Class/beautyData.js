@@ -1,17 +1,17 @@
-export const beauty1 = {
-    contents: `
-        <div>
-            <p>우리 학원의 미인대회 프로그램은 <span>미스그린코리아</span>, <span>미스코리아</span>, <span>미스인터콘티넨탈</span>을 목표로 한 종합 교육 과정입니다. </p>
-            <p>미스그린코리아는 환경 의식을 갖춘  <span>아름다움을</span>, 미스코리아는 <span>지성</span>, <span>인성</span>, <span>개성</span>을 갖춘 인재를, 미스인터콘티넨탈은 글로벌 리더로서 <span>국제적 소통 능력</span>을 갖춘 인재를 선발하고 육성합니다. </p>
-            <p>참가자들은 각 대회의 목적에 맞춘 훈련을 통해 <span>내적·외적 성장</span>을 이루며 사회적 책임감을 갖춘 <span>진정한 아름다움</span>을 추구하게 됩니다.</p>
-        </div>
-    `,
-    images: [
-        '/beauty/main.png'
-    ]
-};
+// export const beauty1 = {
+//     contents: `
+//         <div>
+//             <p>우리 학원의 미인대회 프로그램은 <span>미스그린코리아</span>, <span>미스코리아</span>, <span>미스인터콘티넨탈</span>을 목표로 한 종합 교육 과정입니다. </p>
+//             <p>미스그린코리아는 환경 의식을 갖춘  <span>아름다움을</span>, 미스코리아는 <span>지성</span>, <span>인성</span>, <span>개성</span>을 갖춘 인재를, 미스인터콘티넨탈은 글로벌 리더로서 <span>국제적 소통 능력</span>을 갖춘 인재를 선발하고 육성합니다. </p>
+//             <p>참가자들은 각 대회의 목적에 맞춘 훈련을 통해 <span>내적·외적 성장</span>을 이루며 사회적 책임감을 갖춘 <span>진정한 아름다움</span>을 추구하게 됩니다.</p>
+//         </div>
+//     `,
+//     images: [
+//         '/beauty/main.png'
+//     ]
+// };
 
-export const beauty2 = {
+export const beauty1 = {
     contents: `
         <div>
             <p>미스코리아는 대한민국을 대표하는 미와 재능의 플랫폼으로, 지성과 개성, 사회적 책임감을 겸비한 인재를 발굴하는 현대적인 미인 선발 대회입니다.</p>
@@ -27,7 +27,7 @@ export const beauty2 = {
     ]
 };
 
-export const beauty3 = {
+export const beauty2 = {
     contents: `
         <div>
             <p>미인대회는 외적 아름다움뿐 아니라 개성과 재능, 지적 능력을 겸비한 인재를 발굴하는 경쟁의 장으로, 참가자들은 각종 활동을 통해 자기표현력과 자신감을 키우는 기회를 갖게 됩니다.</p>
@@ -46,7 +46,7 @@ export const beauty3 = {
     ]
 };
 
-export const beauty4 = {
+export const beauty3 = {
     contents: `
         <div>
             <p>지역홍보대사 대회는 각 지역의 특산물과 문화를 알릴 대표 인재를 선발하는 행사입니다.</p>

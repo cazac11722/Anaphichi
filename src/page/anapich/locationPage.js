@@ -28,12 +28,12 @@ const LocatoinPage = () => {
         script.async = true;
         script.onload = () => {
             const map = new naver.maps.Map("map", {
-                center: new naver.maps.LatLng(35.871130, 128.597256),
+                center: new naver.maps.LatLng(35.8708765, 128.5980851),
                 zoom: 17,
             });
 
             const marker = new naver.maps.Marker({
-                position: new naver.maps.LatLng(35.871130, 128.597256),
+                position: new naver.maps.LatLng(35.8708765, 128.5980851),
                 map: map,
                 title: "대구 중구 국채보상로 611 대구시티센터 4, 5층",
             });

@@ -8,7 +8,7 @@ import Header from "../../components/header";
 import HeaderSub from "../../components/header_sub";
 import HeaderSubClass from "../header_sub_class";
 import { useLocation } from "react-router-dom";
-import { beauty1, beauty2, beauty3, beauty4 } from "./beautyData";
+import { beauty1, beauty2, beauty3 } from "./beautyData";
 import Programs from "../body/Programs";
 
 const BeautyPage = () => {
@@ -21,10 +21,10 @@ const BeautyPage = () => {
     ];
 
     const subMenuItems = [
-        { text: '미인대회', link: '/class/beauty', delay: 450, content: beauty1 },
-        { text: '미스코리아', link: '/class/beauty/1', delay: 450, content: beauty2 },
-        { text: '미인대회', link: '/class/beauty/2', delay: 500, content: beauty3 },
-        { text: '지역홍보대사', link: '/class/beauty/3', delay: 550, content: beauty4 },
+        // { text: '미인대회', link: '/class/beauty', delay: 450, content: beauty1 },
+        { text: '미스코리아', link: '/class/beauty', delay: 450, content: beauty1 },
+        { text: '미인대회', link: '/class/beauty/2', delay: 500, content: beauty2 },
+        { text: '지역홍보대사', link: '/class/beauty/3', delay: 550, content: beauty3 },
     ];
 
     const [currentProgram, setCurrentProgram] = useState(null); // Default to the first program

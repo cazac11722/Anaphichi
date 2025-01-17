@@ -38,7 +38,7 @@ const Programs = ({ location, subMenuItems }) => {
                         <div className="txt ">
                             <div className="tit_wrap">
                                 <div>
-                                    <span className="subject"> ClASS</span>
+                                    <span className="subject"> CLASS</span>
                                     <p className="trainer_nm" style={{ fontSize: "3rem" }}>{view.text}</p>
                                 </div>
                             </div>
@@ -49,7 +49,7 @@ const Programs = ({ location, subMenuItems }) => {
                                         <div dangerouslySetInnerHTML={{ __html: view.content.contents }} />
                                     </li>
                                 </ul>
-                                <h5 className={`line ${view.content.vie ? '' : 'hidden'}`}>주요 혜택</h5>
+                                <h5 className={`line ${view.content.vie ? '' : 'hidden'}`}>{view.text == '취업·면접 컨설팅' ? '주요내용' : '주요혜택'}</h5>
                                 <ul className={`readmore ${view.content.vie ? '' : 'hidden'}`} >
                                     <li>
                                         <div dangerouslySetInnerHTML={{ __html: view.content.vie }} />
