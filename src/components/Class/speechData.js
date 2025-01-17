@@ -50,7 +50,8 @@ export const speech3 = {
         '/speech/4/2.jpg',
         '/speech/4/3.jpeg',
         '/speech/4/4.jpeg',
-    ]
+    ],
+    subTitle: '주요 내용',
 };
 
 export const speech4 = {
@@ -62,7 +63,7 @@ export const speech4 = {
     `,
     images: [
         '/speech/5/1.png',
-    ]
+    ],
 };
 
 export const speech5 = {
@@ -83,7 +84,8 @@ export const speech5 = {
         '/speech/6/3.jpg',
         '/speech/6/4.jpg',
         '/speech/6/5.jpg',
-    ]
+    ],
+    subTitle: '주요 내용',
 };
 
 export const speech6 = {
@@ -99,5 +101,6 @@ export const speech6 = {
         '/speech/7/1.png',
         '/speech/7/2.png',
         '/speech/7/3.jpg',
-    ]
+    ],
+    subTitle: '주요 내용',
 };
