@@ -34,8 +34,8 @@ const AnapichPage = () => {
                     <div className="trainer_view">
                         <div className="inner">
                             <div id="V1_view" className="active">
-                                <div className="img"><img src={require("../../assets/image/logo/logo_in.png")} alt="img" /></div>
-                                <div className="txt ">
+                                <div className="img" style={{ border: "0", padding: 0, minWidth: '50%'}}><img src={require("../../assets/image/logo/logo_in.png")} alt="img" style={{ width: "100%", height: "220px", objectFit: "cover" }} /></div>
+                                <div className="txt " style={{ minWidth: '50%', marginLeft: '0' }}>
                                     <div className="tit_wrap">
                                         <div>
                                             <span className="subject"> ANAPEECH</span>

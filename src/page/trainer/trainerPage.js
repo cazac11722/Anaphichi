@@ -41,7 +41,7 @@ const TrainerPage = () => {
                         <h3 data-aos="zoom-in" data-aos-delay="500">TRAINER</h3>
                     </div>
                     <ul className="sub_menu">
-                        {["V1_view", "V2_view", "V3_view", "V4_view"].map((view, index) => (
+                        {["V1_view", "V2_view", "V4_view"].map((view, index) => (
                             <li
                                 key={view}
                                 className={activeTrainer === view ? "active" : ""}
@@ -49,7 +49,6 @@ const TrainerPage = () => {
                             >
                                 {view === "V1_view" && "최윤정 대표"}
                                 {view === "V2_view" && "안도현 원장"}
-                                {view === "V3_view" && "이상혁 원장"}
                                 {view === "V4_view" && "박진서 센터장"}
                             </li>
                         ))}
@@ -154,26 +153,6 @@ const trainers = [
                 "경북도청 공무원 스피치멘토",
                 "대구 신세계백화점 쇼핑 라이브",
             ]},
-        ],
-    },
-    {
-        id: "V3_view",
-        name: "LEE SANG HYUCK",
-        koreanName: "이상혁",
-        image: img4,
-        sections: [
-            { title: "분야", items: ["모델 원장"] },
-            { title: "학과", items: ["중앙대학교 일반대학원 패션학과 석사"] },
-            { title: "경력", items: [
-                "2023 SBS 슈퍼모델",
-                "AP 모델교육총괄 원장",
-                "KAC 한국예술원 겸임 교수",
-                "K-MASTERCLASS 온라인 콘텐츠 제작 본부장",
-                "EMA Agency 워킹 강사",
-                "'서울패션위크' 런웨이 모델",
-                "홍콩 'KFC' CF 모델",
-                "디자이너 브랜드 'Inspire HK' 앰버서더",
-            ] },
         ],
     },
     {

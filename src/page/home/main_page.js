@@ -35,7 +35,7 @@ const MainPage = () => {
             <main>
                 <section className="banner">
                     <img
-                        src="https://firebasestorage.googleapis.com/v0/b/comnect-aa2fc.appspot.com/o/videos2.gif?alt=media&token=b863fdfc-d1fe-4e5c-8d0b-f95f8945aea2"
+                        src={"https://lias303.dothome.co.kr/img/videos.gif"}
                         alt="img"
                         width={100}
                         height={50}
@@ -71,7 +71,7 @@ const MainPage = () => {
                             <p data-aos="fade-up" data-aos-delay="200"> 학생 맞춤형 교육을 제공합니다. </p>
                         </div>
                     </div>
-                    <ul className="list">
+                    <ul className="list" style={{justifyContent: "start"}}>
                         <li data-aos="fade-up" data-aos-delay="400" className="aos-init aos-animate">
                             <h3>최윤정 대표</h3>
                             <img src={require("../../assets/image/trainer/img2.jpg")} alt="img" />
@@ -83,10 +83,6 @@ const MainPage = () => {
                         <li data-aos="fade-up" data-aos-delay="300" className="aos-init aos-animate">
                             <h3>박진서 모델 센터장</h3>
                             <img src={require("../../assets/image/trainer/img1.jpg")} alt="img" />
-                        </li>
-                        <li data-aos="fade-up" data-aos-delay="500" className="aos-init aos-animate">
-                            <h3>이상혁 원장</h3>
-                            <img src={require("../../assets/image/trainer/img4.jpg")} alt="img" style={{ objectPosition: "0% 18%" }} />
                         </li>
                     </ul>
                 </section>
@@ -173,7 +169,7 @@ const MainPage = () => {
                     <div className="title txtWh">
                         <p className="tit aos-init aos-animate" data-aos="fade-up">제휴업체로고</p>
                     </div>
-
+ 
                     <Swiper
                         modules={[Autoplay]}
                         loop={true} // 무한 루프를 설정하여 첫 번째 슬라이드로 돌아가도록 함
@@ -214,6 +210,7 @@ const MainPage = () => {
                         <SwiperSlide><img src={require("../../assets/image/wet/img10.png")} height={"120px"} alt='' /></SwiperSlide>
                         <SwiperSlide><img src={require("../../assets/image/wet/img11.jpeg")} height={"120px"} alt='' /></SwiperSlide>
                         <SwiperSlide><img src={require("../../assets/image/wet/img12.jpeg")} height={"120px"} alt='' /></SwiperSlide>
+                        <SwiperSlide><img src={require("../../assets/image/wet/img13.png")} height={"120px"} alt='' /></SwiperSlide>
                     </Swiper>
                 </section>
             </main>

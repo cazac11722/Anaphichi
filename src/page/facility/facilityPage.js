@@ -53,6 +53,7 @@ const FacilityPage = () => {
         AOS.init({
             duration: 500,
         });
+        document.body.classList.add('active');
     }, []);
 
     return (

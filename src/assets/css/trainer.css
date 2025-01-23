@@ -32,6 +32,7 @@
 .trainer .list>li {
     width: 23%;
     text-align: left;
+    margin-right: 2em;
 }
 
 .trainer .list>li h3 {
@@ -77,6 +78,7 @@
         width: 100%;
         text-align: left;
         margin-bottom: 24px;
+        margin-right: 0;
     }
 
     .trainer .list>li h3 {

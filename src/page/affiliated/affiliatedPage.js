@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Footer from "../../components/footer";
 import Header from "../../components/header";
+import { Swiper, SwiperSlide } from 'swiper/react';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -43,42 +44,142 @@ const AffiliatedPage = () => {
                                 </div>
                                 <section>
                                     <h5 className="line">FITNESS</h5>
-                                    <ul className="readmore">
-                                        <li style={{ display: "flex" }}>
-                                            <img alt="A1 강의실" src={require("../../assets/image/wet/img2.jpeg")} height={150} />
-                                            <img alt="A1 강의실" src={require("../../assets/image/wet/img12.jpeg")} height={150} />
-                                        </li>
-                                    </ul>
+                                    <Swiper
+                                        className={'readmore'}
+                                        slidesperviewloop={1}
+                                        breakpoints={{
+                                            300: {
+                                                slidesPerView: 2.5,
+                                            },
+                                            640: {
+                                                slidesPerView: 2.5,
+                                            },
+                                            840: {
+                                                slidesPerView: 3,
+                                            },
+                                            1040: {
+                                                slidesPerView: 4,
+                                            },
+                                            1440: {
+                                                slidesPerView: 5,
+                                            },
+                                        }}
+                                    >
+                                        <SwiperSlide><img src={require("../../assets/image/wet/img2.jpeg")} height={"120px"} alt='' /></SwiperSlide>
+                                        <SwiperSlide><img src={require("../../assets/image/wet/img12.jpeg")} height={"120px"} alt='' /></SwiperSlide>
+                                        <SwiperSlide><img src={require("../../assets/image/wet/img13.png")} height={"180px"} alt='' /></SwiperSlide>
+                                    </Swiper>
                                     <h5 className="line">BEAUTY</h5>
-                                    <ul className="readmore">
-                                        <li style={{ display: "flex" }}>
-                                            <img alt="A1 강의실" src={require("../../assets/image/wet/img11.jpeg")} height={200} />
-                                            <img alt="A1 강의실" src={require("../../assets/image/wet/img1.jpeg")} height={200} />
-                                        </li>
-                                    </ul>
+                                    <Swiper
+                                        className={'readmore'}
+                                        slidesperviewloop={1}
+                                        breakpoints={{
+                                            300: {
+                                                slidesPerView: 2,
+                                            },
+                                            640: {
+                                                slidesPerView: 2,
+                                            },
+                                            840: {
+                                                slidesPerView: 3,
+                                            },
+                                            1040: {
+                                                slidesPerView: 4,
+                                            },
+                                            1440: {
+                                                slidesPerView: 5,
+                                            },
+                                        }}
+                                    >
+                                        <SwiperSlide><img src={require("../../assets/image/wet/img11.jpeg")} height={"200px"} alt='' /></SwiperSlide>
+                                        <SwiperSlide><img src={require("../../assets/image/wet/img1.jpeg")} height={"200px"} alt='' /></SwiperSlide>
+                                    </Swiper>
                                     <h5 className="line">SKIN CARE</h5>
-                                    <ul className="readmore">
-                                        <li style={{ display: "flex", flexWrap: "wrap" }}>
-                                            <img alt="A1 강의실" src={require("../../assets/image/wet/img5.png")} height={120} />
-                                            <img alt="A1 강의실" src={require("../../assets/image/wet/img6.png")} height={120} />
-                                            <img alt="A1 강의실" src={require("../../assets/image/wet/img7.png")} height={120} />
-                                            <img alt="A1 강의실" src={require("../../assets/image/wet/img10.png")} height={120} />
-                                            <img alt="A1 강의실" src={require("../../assets/image/wet/img3.jpeg")} height={120} />
-                                        </li>
-                                    </ul>
+                                    <Swiper
+                                        className={'readmore'}
+                                        slidesperviewloop={1}
+                                        breakpoints={{
+                                            300: {
+                                                slidesPerView: 2.5,
+                                            },
+                                            640: {
+                                                slidesPerView: 2.5,
+                                            },
+                                            840: {
+                                                slidesPerView: 3,
+                                                spaceBetween: 20,
+                                            },
+                                            1040: {
+                                                slidesPerView: 4,
+                                                spaceBetween: 20,
+                                            },
+                                            1440: {
+                                                slidesPerView: 5,
+                                                spaceBetween: 20,
+                                            },
+                                        }}
+                                    >
+                                        <SwiperSlide><img src={require("../../assets/image/wet/img5.png")} height={"120px"} alt='' /></SwiperSlide>
+                                        <SwiperSlide><img src={require("../../assets/image/wet/img6.png")} height={"120px"} alt='' /></SwiperSlide>
+                                        <SwiperSlide><img src={require("../../assets/image/wet/img7.png")} height={"120px"} alt='' /></SwiperSlide>
+                                        <SwiperSlide><img src={require("../../assets/image/wet/img10.png")} height={"120px"} alt='' /></SwiperSlide>
+                                        <SwiperSlide><img src={require("../../assets/image/wet/img3.jpeg")} height={"120px"} alt='' /></SwiperSlide>
+                                    </Swiper>
                                     <h5 className="line">DANTAL</h5>
-                                    <ul className="readmore">
-                                        <li style={{ display: "flex", flexWrap: "wrap" }}>
-                                            <img alt="A1 강의실" src={require("../../assets/image/wet/img4.png")} height={120} />
-                                            <img alt="A1 강의실" src={require("../../assets/image/wet/img9.png")} height={120} />
-                                        </li>
-                                    </ul>
+                                    <Swiper
+                                        className={'readmore'}
+                                        slidesperviewloop={1}
+                                        breakpoints={{
+                                            300: {
+                                                slidesPerView: 2.5,
+                                            },
+                                            640: {
+                                                slidesPerView: 2.5,
+                                            },
+                                            840: {
+                                                slidesPerView: 3,
+                                                spaceBetween: 20,
+                                            },
+                                            1040: {
+                                                slidesPerView: 4,
+                                                spaceBetween: 20,
+                                            },
+                                            1440: {
+                                                slidesPerView: 5,
+                                                spaceBetween: 20,
+                                            },
+                                        }}
+                                    >
+                                        <SwiperSlide><img src={require("../../assets/image/wet/img4.png")} height={"120px"} alt='' /></SwiperSlide>
+                                        <SwiperSlide><img src={require("../../assets/image/wet/img9.png")} height={"120px"} alt='' /></SwiperSlide>
+                                    </Swiper>
                                     <h5 className="line">FASHION</h5>
-                                    <ul className="readmore">
-                                        <li style={{ display: "flex", flexWrap: "wrap" }}>
-                                            <img alt="A1 강의실" src={require("../../assets/image/wet/img8.jpeg")} height={100} />
-                                        </li>
-                                    </ul>
+                                    <Swiper
+                                        className={'readmore'}
+                                        slidesperviewloop={1}
+                                        breakpoints={{
+                                            300: {
+                                                slidesPerView: 2,
+                                            },
+                                            640: {
+                                                slidesPerView: 2,
+                                            },
+                                            840: {
+                                                slidesPerView: 3,
+                                                spaceBetween: 20,
+                                            },
+                                            1040: {
+                                                slidesPerView: 4,
+                                                spaceBetween: 20,
+                                            },
+                                            1440: {
+                                                slidesPerView: 5,
+                                                spaceBetween: 20,
+                                            },
+                                        }}
+                                    >
+                                        <SwiperSlide><img src={require("../../assets/image/wet/img8.jpeg")} height={"80px"} alt='' /></SwiperSlide>
+                                    </Swiper>
                                 </section>
                             </div>
                         </div>

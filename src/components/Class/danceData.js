@@ -33,7 +33,9 @@ export const dance1 = {
                         </p>
                     </div>`,
     images: [
-        '/dance/main.jpg',
-        '/dance/1.png',
+        '/dance/main.jpeg',
+        '/dance/img1.jpeg',
+        '/dance/img2.jpeg',
+        '/dance/img3.jpeg',
     ]
 };
