@@ -1,0 +1,28 @@
+<meta name="google-site-verification" content="3a6KorPRNR-l0p62gnHSw9zSNDSD9J9TX2wclHolkFk" />
+<meta name="naver-site-verification" content="2c4377d0d97ff55ac84fea6cddd59c250cc5a075" />
+<link rel="shortcut icon" href="https://anapeech.com/img/favicon2.ico">
+<link rel="canonical" href="https://anapeech.com/" />
+<meta name="robots" content="index,follow" />
+<meta name="subject" content="아나피치" />
+<meta name="title" content="아나피치" />
+<meta name="author" content="아나피치">
+<meta name="description" content="방송,연기,모델,아나운서,미스코리아 등 실무 중심 교육으로 인재를 양성하는 전문 교육 기관 아나피치 입니다."/>
+<meta name="keywords" content="아나피치" />
+
+<meta property="og:type" content="website" />
+<meta property="og:rich_attachment" content="true" />
+<meta property="og:site_name" content="아나피치" />
+<meta property="og:title" content="아나피치" />
+<meta property="og:description" content="방송,연기,모델,아나운서,미스코리아 등 실무 중심 교육으로 인재를 양성하는 전문 교육 기관 아나피치 입니다." />
+<meta property="og:image" content="https://anapeech.com/img/og_img.png" />
+<meta property="og:url" content="https://anapeech.com/" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="아나피치" />
+<meta name="twitter:description" content="방송,연기,모델,아나운서,미스코리아 등 실무 중심 교육으로 인재를 양성하는 전문 교육 기관 아나피치 입니다." />
+<meta name="twitter:image" content="https://anapeech.com/img/og_img.png" />
+	
+<meta itemprop="name" content="아나피치" />
+<meta itemprop="description" content="방송,연기,모델,아나운서,미스코리아 등 실무 중심 교육으로 인재를 양성하는 전문 교육 기관 아나피치 입니다." />
+<meta itemprop="image" content="https://anapeech.com/img/og_img.png" />
+<title>아나피치</title>
